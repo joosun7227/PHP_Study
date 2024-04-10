@@ -14,6 +14,7 @@ var_dump(is_int($x)); //bool(true)
 // is_int 이게 숫자냐?
 $y = 3.8;
 
+// is_int(); 정수판별
 print "<br>";
 if(is_int($y)){
   echo "y는 정수입니다.";
@@ -27,4 +28,22 @@ if(is_float($y)){
 } else {
   echo "y는 실수가 아닙니다";
 }
+
+print "<br>";
+$x = "안녕";
+$y = "123";
+if( is_numeric($y)){
+  echo "숫자입니다";
+} else {
+  echo "숫자가 아닙니다.";
+}
+
+print "<br>";
+echo (pi());
+
+print "<br>";
+echo (min(0,1,2,3,4,5));
+
+print "<br>";
+echo (max(0,1,2,3,4,5));
 ?>
